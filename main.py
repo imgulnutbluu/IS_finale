@@ -144,13 +144,10 @@ elif menu == "Predicting Video Game":
     # สร้างและฝึก Random Forest
     rf_model = RandomForestClassifier(random_state=42)
     rf_model.fit(X_train, y_train)
-
+    
     # บันทึกโมเดลลงในไฟล์ .pkl
     joblib.dump(dt_model, 'decision_tree_model.pkl')  # บันทึกโมเดล Decision Tree
     joblib.dump(rf_model, 'random_forest_model.pkl')  # บันทึกโมเดล Random Forest
-
-    # --- ส่วนของ Streamlit --- 
-    st.title("Recommended games by sales")
 
     # เลือกแพลตฟอร์ม, ประเภทเกม และปีที่วางจำหน่าย
     platform = st.selectbox("Select platform", ['Wii', 'NES', 'GB', 'PS4', 'X360'])
