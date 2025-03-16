@@ -21,7 +21,7 @@ st.set_page_config(page_title="IS PROJECT by GULLANUT", layout="wide")
 menu = st.sidebar.radio("Menu", ["Machine Learning", "Neural Network", "Predicting Video Game", "Predicting Series"])
 
 # --- หน้า 1: Machine Learning ---
-if menu == "Machine Learning":
+if menu == "🧭 Machine Learning 🚊":
     st.title("Machine Learning - Decision Tree and Random Forest")
     st.markdown("""
     ### **1. Load Data from CSV from Kaggle**
@@ -70,7 +70,7 @@ if menu == "Machine Learning":
     """)
 
 # --- หน้า 2: Neural Network ---
-elif menu == "Neural Network":
+elif menu == "🌐 Neural Network ✈️":
     st.title("Neural Network-based Series Title Prediction")
     st.markdown("""
 ### 1. **Preparing Data and Training the Model**
@@ -111,7 +111,7 @@ In the UI (user interface), the user can select a **Genre** and **Release Year**
 
 
 # --- หน้า 3: Predicting Video Game ---
-elif menu == "Predicting Video Game":
+elif menu == "💡 Predicting Video Game 💻":
     st.title("Recommended games by sales")
     file_path = "vgsales.csv"
     data = pd.read_csv(file_path)
@@ -209,7 +209,7 @@ elif menu == "Predicting Video Game":
                 st.write("No games found matching your selection")
 
 # --- หน้า 4: Predicting Series ---
-elif menu == "Predicting Series":
+elif menu == "📽️ Predicting Series 📺":
     st.title('Predicting Title of Series')
 
     # --- ฟังก์ชันฝึกโมเดล ---
