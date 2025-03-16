@@ -1,0 +1,19 @@
+# Python environment
+env/
+venv/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Log files
+*.log
+
+# Model files
+*.h5
+*.pkl
