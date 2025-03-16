@@ -21,7 +21,7 @@ st.set_page_config(page_title="IS PROJECT by GULLANUT", layout="wide")
 menu = st.sidebar.radio("Menu", ["Machine Learning", "Neural Network", "Predicting Video Game", "Predicting Series"])
 
 # --- หน้า 1: Machine Learning ---
-if menu == " Machine Learning":
+if menu == "Machine Learning":
     st.title("🧭 Machine Learning - Decision Tree and Random Forest 🚊")
     st.markdown("""
     ### **1. Load Data from CSV from Kaggle**
